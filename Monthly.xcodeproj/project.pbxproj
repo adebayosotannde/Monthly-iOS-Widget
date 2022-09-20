@@ -11,7 +11,38 @@
 		EE14630A28D9F0EA00CD8F1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE14630928D9F0EA00CD8F1C /* ContentView.swift */; };
 		EE14630C28D9F0EB00CD8F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE14630B28D9F0EB00CD8F1C /* Assets.xcassets */; };
 		EE14631028D9F0EB00CD8F1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE14630F28D9F0EB00CD8F1C /* Preview Assets.xcassets */; };
+		EE14631D28D9F14F00CD8F1C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE14631C28D9F14F00CD8F1C /* WidgetKit.framework */; };
+		EE14631F28D9F14F00CD8F1C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE14631E28D9F14F00CD8F1C /* SwiftUI.framework */; };
+		EE14632228D9F14F00CD8F1C /* MonthlyWiget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE14632128D9F14F00CD8F1C /* MonthlyWiget.swift */; };
+		EE14632428D9F15000CD8F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE14632328D9F15000CD8F1C /* Assets.xcassets */; };
+		EE14632828D9F15000CD8F1C /* MonthlyWigetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EE14631A28D9F14F00CD8F1C /* MonthlyWigetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EE14633128D9FEC400CD8F1C /* MonthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE14632F28D9FEC400CD8F1C /* MonthConfig.swift */; };
+		EE14633428DA05C200CD8F1C /* Colors+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE14633228DA05C200CD8F1C /* Colors+Ext.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE14632628D9F15000CD8F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE1462FC28D9F0EA00CD8F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE14631928D9F14F00CD8F1C;
+			remoteInfo = MonthlyWigetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE14632928D9F15000CD8F1C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EE14632828D9F15000CD8F1C /* MonthlyWigetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EE14630428D9F0EA00CD8F1C /* Monthly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monthly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +51,14 @@
 		EE14630B28D9F0EB00CD8F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE14630D28D9F0EB00CD8F1C /* Monthly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Monthly.entitlements; sourceTree = "<group>"; };
 		EE14630F28D9F0EB00CD8F1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE14631A28D9F14F00CD8F1C /* MonthlyWigetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MonthlyWigetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE14631C28D9F14F00CD8F1C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		EE14631E28D9F14F00CD8F1C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EE14632128D9F14F00CD8F1C /* MonthlyWiget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyWiget.swift; sourceTree = "<group>"; };
+		EE14632328D9F15000CD8F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE14632528D9F15000CD8F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE14632F28D9FEC400CD8F1C /* MonthConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthConfig.swift; sourceTree = "<group>"; };
+		EE14633228DA05C200CD8F1C /* Colors+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +69,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE14631728D9F14F00CD8F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE14631F28D9F14F00CD8F1C /* SwiftUI.framework in Frameworks */,
+				EE14631D28D9F14F00CD8F1C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				EE14630628D9F0EA00CD8F1C /* Monthly */,
+				EE14632028D9F14F00CD8F1C /* MonthlyWiget */,
+				EE14631B28D9F14F00CD8F1C /* Frameworks */,
 				EE14630528D9F0EA00CD8F1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				EE14630428D9F0EA00CD8F1C /* Monthly.app */,
+				EE14631A28D9F14F00CD8F1C /* MonthlyWigetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +120,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EE14631B28D9F14F00CD8F1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE14631C28D9F14F00CD8F1C /* WidgetKit.framework */,
+				EE14631E28D9F14F00CD8F1C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE14632028D9F14F00CD8F1C /* MonthlyWiget */ = {
+			isa = PBXGroup;
+			children = (
+				EE14632F28D9FEC400CD8F1C /* MonthConfig.swift */,
+				EE14633228DA05C200CD8F1C /* Colors+Ext.swift */,
+				EE14632128D9F14F00CD8F1C /* MonthlyWiget.swift */,
+				EE14632328D9F15000CD8F1C /* Assets.xcassets */,
+				EE14632528D9F15000CD8F1C /* Info.plist */,
+			);
+			path = MonthlyWiget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +151,34 @@
 				EE14630028D9F0EA00CD8F1C /* Sources */,
 				EE14630128D9F0EA00CD8F1C /* Frameworks */,
 				EE14630228D9F0EA00CD8F1C /* Resources */,
+				EE14632928D9F15000CD8F1C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EE14632728D9F15000CD8F1C /* PBXTargetDependency */,
 			);
 			name = Monthly;
 			productName = Monthly;
 			productReference = EE14630428D9F0EA00CD8F1C /* Monthly.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EE14631928D9F14F00CD8F1C /* MonthlyWigetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE14632C28D9F15000CD8F1C /* Build configuration list for PBXNativeTarget "MonthlyWigetExtension" */;
+			buildPhases = (
+				EE14631628D9F14F00CD8F1C /* Sources */,
+				EE14631728D9F14F00CD8F1C /* Frameworks */,
+				EE14631828D9F14F00CD8F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonthlyWigetExtension;
+			productName = MonthlyWigetExtension;
+			productReference = EE14631A28D9F14F00CD8F1C /* MonthlyWigetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +191,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					EE14630328D9F0EA00CD8F1C = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					EE14631928D9F14F00CD8F1C = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -118,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				EE14630328D9F0EA00CD8F1C /* Monthly */,
+				EE14631928D9F14F00CD8F1C /* MonthlyWigetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +224,14 @@
 			files = (
 				EE14631028D9F0EB00CD8F1C /* Preview Assets.xcassets in Resources */,
 				EE14630C28D9F0EB00CD8F1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE14631828D9F14F00CD8F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE14632428D9F15000CD8F1C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +247,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE14631628D9F14F00CD8F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE14632228D9F14F00CD8F1C /* MonthlyWiget.swift in Sources */,
+				EE14633128D9FEC400CD8F1C /* MonthConfig.swift in Sources */,
+				EE14633428DA05C200CD8F1C /* Colors+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE14632728D9F15000CD8F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE14631928D9F14F00CD8F1C /* MonthlyWigetExtension */;
+			targetProxy = EE14632628D9F15000CD8F1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EE14631128D9F0EB00CD8F1C /* Debug */ = {
@@ -259,6 +380,7 @@
 		EE14631428D9F0EB00CD8F1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Monthly/Monthly.entitlements;
@@ -297,6 +419,7 @@
 		EE14631528D9F0EB00CD8F1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Monthly/Monthly.entitlements;
@@ -332,6 +455,65 @@
 			};
 			name = Release;
 		};
+		EE14632A28D9F15000CD8F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G4YKXJ9A6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonthlyWiget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MonthlyWiget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AdebayoSotannde.Monthly.MonthlyWiget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE14632B28D9F15000CD8F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G4YKXJ9A6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonthlyWiget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MonthlyWiget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AdebayoSotannde.Monthly.MonthlyWiget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -349,6 +531,15 @@
 			buildConfigurations = (
 				EE14631428D9F0EB00CD8F1C /* Debug */,
 				EE14631528D9F0EB00CD8F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE14632C28D9F15000CD8F1C /* Build configuration list for PBXNativeTarget "MonthlyWigetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE14632A28D9F15000CD8F1C /* Debug */,
+				EE14632B28D9F15000CD8F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
